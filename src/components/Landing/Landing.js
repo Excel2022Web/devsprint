@@ -4,7 +4,9 @@ import './Landing.css'
 
 function Landing() {
   return (
-    <div>Landing</div>
+    <div className='landing'>
+      <h1>Landing</h1>
+    </div>
   )
 }
 

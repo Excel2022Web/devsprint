@@ -4,7 +4,9 @@ import './Sponsors.css'
 
 function Sponsors() {
   return (
-    <div>Sponsors</div>
+    <div className='sponsors'>
+      <h1>Sponsors</h1>
+    </div>
   )
 }
 

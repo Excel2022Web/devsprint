@@ -4,7 +4,9 @@ import './Highlights.css'
 
 function Highlights() {
   return (
-    <div>Highlights</div>
+    <div className='highlights'>
+      <h1>Highlights</h1>
+    </div>
   )
 }
 

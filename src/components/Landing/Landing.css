@@ -1,3 +1,4 @@
 .landing {
-
+    height: calc(100vh - 80px);
+    background-color: rgb(21, 255, 0);
 }

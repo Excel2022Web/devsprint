@@ -1,16 +1,18 @@
 import React from 'react'
 
-import { Landing, About, Highlights, Sponsors } from '../../components'
+import { Landing, About, Highlights, Sponsors, Team, Organizations } from '../../components'
 
 import './LandingPage.css'
 
 function LandingPage() {
   return (
-    <div>
-        <Landing />
-        <About />
-        <Highlights />
-        <Sponsors />
+    <div className="landingPage">
+      <Landing />
+      <About />
+      <Highlights />
+      <Organizations />
+      <Sponsors />
+      <Team />
     </div>
   )
 }
