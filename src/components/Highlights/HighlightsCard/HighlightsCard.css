@@ -1,0 +1,35 @@
+.highlightsCard {
+    width: 30%;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.highlightsCard-icon {
+    box-sizing: border-box;
+    padding: 1.2rem;
+}
+
+.card-icon {
+    font-size: 1.85rem;
+    font-weight: 400;
+}
+
+.highlightsCard-title {
+    font-family: var(--primary-font);
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: #000;
+    padding-bottom: 0.7rem;
+}
+
+.highlightsCard-desc {
+    text-align: center;
+    font-family: var(--primary-font);
+    font-size: 0.95rem;
+    font-weight: 400;
+    color: var(--secondary-color);
+}
+
