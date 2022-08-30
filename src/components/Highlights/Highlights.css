@@ -1,4 +1,45 @@
 .highlights {
     height: 100vh;
-    background-color: rgb(0, 179, 255);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+}
+
+.highlights-heading {
+    padding-top: 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    text-align: center;
+    width: 53%;
+}
+
+.highlights-title {
+    font-size: 2.5rem;
+    font-family: var(--primary-font);
+    color: #000;
+    font-weight: 600;
+
+}
+
+.highlights-desc {
+    font-family: var(--primary-font);
+    font-size: 0.95rem;
+    font-weight: 400;
+    color: var(--secondary-color);
+    flex-wrap: wrap;
+}
+
+.highlights-card {
+    padding: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 90%;
+    gap: 1rem;
+    flex-wrap: wrap;
 }
