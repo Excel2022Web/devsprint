@@ -50,4 +50,10 @@
     font-size: 1.2rem;
     box-shadow: 0 0.5rem 1rem rgb(0 0 0 / 45%);
     cursor: pointer;
+    transition: all 0.2s ease-out;
+}
+
+
+.landing-button:hover {
+    transform: scale(1.05);
 }
