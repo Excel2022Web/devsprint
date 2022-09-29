@@ -11,7 +11,7 @@ function LandingPage() {
       <About />
       <Highlights />
       <Organizations />
-      <Sponsors />
+      {/* <Sponsors /> */}
       <Team />
     </div>
   )
