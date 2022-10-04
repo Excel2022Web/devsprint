@@ -1,44 +1,69 @@
 .organizations {
-    height: 100vh;
-    padding: 2.5rem;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: flex-start;
-    font-family: var(--primary-font);
+  min-height: 75vh;
+  padding: 3.5rem 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  font-family: var(--primary-font);
 }
 
 .org_title {
-    font-size: 2.5rem;
-    color: #000;
-    font-weight: 600;
-    padding-bottom: 2.5rem;
+  font-size: 2.5rem;
+  color: #000;
+  font-weight: 600;
+  padding: 0 0 2.5rem 0;
 }
 
-.org_event1 {
-    width: 75%;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: flex-start;
-    gap: 3rem;
-    margin-bottom: 2rem;
+.org_event1,
+.org_event2 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 3rem;
+  margin-bottom: 2rem;
 }
 
-.orgevent1_desc {
-    flex: 0.5;
+@media only screen and (max-width: 576px) {
+  .org_event1 {
+    flex-direction: column;
+  }
+  .org_event2 {
+    flex-direction: column-reverse;
+  }
+}
+
+.orgevent1_desc,
+.orgevent2_desc {
+  flex: 0.5;
+}
+
+@media only screen and (max-width: 576px) {
+  .orgevent1_desc,
+  .orgevent2_desc {
+    flex: 1;
+    width: 250px;
+  }
 }
 
 .orgdesc_name {
-    font-size: 1.8rem;
-    font-weight: 600;
-    padding-bottom: 1rem;
+  font-size: 1.8rem;
+  font-weight: 600;
+  padding-bottom: 1rem;
 }
-
 
 .orgevent_img {
-    flex: 0.5;
+  flex: 0.5;
+  width: 250px;
 }
+
+@media only screen and (max-width: 576px) {
+  .orgevent_img {
+    flex: 1;
+  }
+}
+
 .orgevent_img > img {
-    width: 400px;
+  width: 100%;
 }

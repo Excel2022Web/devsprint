@@ -5,7 +5,7 @@ import './Team.css'
 
 function Team() {
   return (
-    <div className='team'>
+    <div className='container team' id='team'>
       <h1 className='team_title'>Contact Us</h1>
       <div className='team_card_container'>
         <ContactCard />

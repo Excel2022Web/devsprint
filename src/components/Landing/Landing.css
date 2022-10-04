@@ -1,13 +1,14 @@
 .landing {
     height: calc(100vh - 80px);
-}
-
-.landing-body {
-    height: 100%;
     background-image: url('https://images.unsplash.com/photo-1497091071254-cc9b2ba7c48a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2074&q=80');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+}
+
+.landing-body {
+    height: 100%;
+    
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -27,8 +28,12 @@
     font-family: var(--primary-font);
     font-weight: 900;
     line-height: 1.1;
-    color: var(--primary-color);
-
+    color: var(--primary-color);  
+}
+@media only screen and (max-width: 576px) {
+    .landing-title {
+        font-size: 4.2rem;
+    }
 }
 
 .landing-desc {
@@ -37,10 +42,16 @@
     color: #fff;
     font-weight: 400;
 }
+@media only screen and (max-width: 576px) {
+    .landing-desc {
+        font-size: 1rem;
+        font-weight: 300;
+    }
+}
 
 .landing-button {
     font-family: var(--primary-font);
-    width: 11%;
+    width: 11rem;
     border: none;
     outline: none;
     padding: 0.75rem 1.5rem;

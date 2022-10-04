@@ -1,57 +1,52 @@
-.about {    
-    padding: 3.5rem 10rem;
-    height: 100vh; 
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 2rem;
-    justify-content: flex-start;
-    font-family: var(--primary-font);
-    width: 100%;
-}
-
-.about-heading {
-   gap: 2.5rem;
-   width: 100%;
+.about {
+  padding: 3.5rem 0rem;
+  min-height: 75vh;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 2rem;
+  font-family: var(--primary-font);
 }
 
 .about-title {
-    font-size: 2.5rem;
-    color: #000;
-    font-weight: 700;
-    padding-bottom: 2rem;
+  font-size: 2.5rem;
+  color: #000;
+  font-weight: 700;
+  padding-bottom: 2rem;
 }
 
 .about-desc {
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    justify-content: flex-start;
-    width: 100%;
-    gap: 2.2rem;
-    color: #838383;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  width: 100%;
+  gap: 1rem;
+  color: #838383;
+  font-family: var(--primary-font);
+  font-size: 1rem;
 }
 
-.about-desc1 {
-    /* width: 40%; */
-    font-weight: 500;
-    font-size: 1rem;
-}
-
-.about-desc2 {
-    /* width: 40%; */
-    font-weight: 500;
-    font-size: 1rem;
+@media only screen and (max-width: 992px) {
+  .about-desc {
+    flex-direction: column;
+  }
 }
 
 .about-cards {
-    display: flex;
-    align-items: flex-start;
-    gap: 1.5rem;
-    width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+
+  gap: 0.5rem;
+  width: 100%;
 }
 
-
-
-
-
+@media only screen and (max-width: 768) {
+  .about-cards {
+    flex-direction: column;
+  }
+}
