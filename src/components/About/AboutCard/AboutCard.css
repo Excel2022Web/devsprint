@@ -28,13 +28,6 @@
   font-weight: 400;
   opacity: 0.8;
 }
-.aboutcard_more {
-  font-size: 1rem;
-  font-weight: 600;
-  color: var(--color);
-  transition: all 0.3s ease;
-}
-.aboutCard:hover .aboutcard_more,
 .aboutCard:hover .aboutcard_icon {
   color: #fff;
 }
