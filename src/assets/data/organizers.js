@@ -1,0 +1,42 @@
+export const organizers = [
+  {
+    name: "Nasreen K Basheer",
+    title: "Chairperson",
+    email: "nasreenkbasheer.mec@gmail.com",
+    phone: "9605204433",
+    linkedin: "https://www.linkedin.com/in/nasreen-k-basheer-6795331a5",
+    photo: require("../../assets/png/organizers/nasreen.JPG"),
+  },
+  {
+    name: "Aneetta Mary Sajan",
+    title: "Chairperson, FOSS MEC",
+    phone: "8089319804",
+    email: "aneettamarysajan.mec@gmail.com",
+    linkedin: "https://www.linkedin.com/in/aneetta-mary-s-2827231a1/",
+    photo: require("../../assets/png/organizers/aneetta.jpeg"),
+  },
+  {
+    name: "Ashish Mathew Philip",
+    title: "CS Tech Manager, Excel 2022",
+    email: "ashishmathewphilip.mec@gmail.com",
+    phone: "8281356968",
+    linkedin: "https://www.linkedin.com/in/ashish-philip-b22b41103",
+    photo: require("../../assets/png/organizers/Ashish.jpeg"),
+  },
+  {
+    name: "Sreeram V",
+    title: "Event Head",
+    email: "sreeramvin.mec@gmail.com",
+    phone: "9544953044",
+    linkedin: "www.linkedin.com/in/sreeramvin",
+    photo: require("../../assets/png/organizers/sreeram.jpeg"),
+  },
+  {
+    name: "Vishnu R",
+    title: "Event Head",
+    email: "vishnurr2k01@gmail.com",
+    phone: "7736983452",
+    linkedin: "https://www.linkedin.com/in/vishnu-r-potti",
+    photo: require("../../assets/png/organizers/vishnu.jpeg"),
+  },
+]
