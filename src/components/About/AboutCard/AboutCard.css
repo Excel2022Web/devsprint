@@ -21,10 +21,10 @@
   transition: all 0.3s ease;
 }
 .aboutcard_title {
-  font-size: 1.5rem;
+  font-size: 1.25rem;
 }
 .aboutcard_desc {
-  font-weight: 0.8rem;
+  font-size: 0.9rem;
   font-weight: 400;
   opacity: 0.8;
 }
