@@ -26,10 +26,10 @@
   }
 
   .footer-social-socialmedia {
-    order: 1;
+    order: 2;
   }
   .footer-social-college {
-    order: 2;
+    order: 1;
   }
   .footer-social-event {
     order: 3;
@@ -53,9 +53,10 @@
   width: 30px;
   height: 30px;
   color: #ffff;
+  transition: all 0.2s ease-out;
 }
 
-.footer-social-socialmedia:hover {
+.footer-social-socialmedia a:hover {
   transform: scale(1.25);
 }
 
