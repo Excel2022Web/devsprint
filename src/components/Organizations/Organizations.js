@@ -3,6 +3,7 @@ import React from "react"
 import "./Organizations.css"
 
 import excel_logo from "../../assets/png/excellogowithtext.png"
+import foss_mec_logo from "../../assets/png/fossmec.png"
 
 function Organizations() {
   return (
@@ -25,10 +26,10 @@ function Organizations() {
         </div>
         <div className="org_event2">
           <div className="orgevent_img">
-            <img src={excel_logo} alt="" />
+            <img src={foss_mec_logo} alt="" />
           </div>
           <div className="orgevent2_desc">
-            <h2 className="orgdesc_name">Excel</h2>
+            <h2 className="orgdesc_name">Foss MEC</h2>
             <p className="orgdesc_details">
               The builder interface comes with a lot of options that allow you
               to customize your building experience. We try not to lock you down

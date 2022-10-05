@@ -53,9 +53,15 @@
   padding-bottom: 1rem;
 }
 
-.orgevent_img {
+.org_event1 .orgevent_img {
   flex: 0.5;
   width: 250px;
+}
+
+.org_event2 .orgevent_img {
+  flex: 0.5;
+  width: 250px;
+  scale: 0.7;
 }
 
 @media only screen and (max-width: 576px) {
