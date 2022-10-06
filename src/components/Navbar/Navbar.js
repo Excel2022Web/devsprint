@@ -1,103 +1,157 @@
-import React from "react"
-import AppBar from "@mui/material/AppBar"
-import Box from "@mui/material/Box"
-import Divider from "@mui/material/Divider"
-import Drawer from "@mui/material/Drawer"
-import IconButton from "@mui/material/IconButton"
-import List from "@mui/material/List"
-import ListItem from "@mui/material/ListItem"
-import ListItemButton from "@mui/material/ListItemButton"
-import ListItemText from "@mui/material/ListItemText"
-import MenuIcon from "@mui/icons-material/Menu"
-import Toolbar from "@mui/material/Toolbar"
-import Typography from "@mui/material/Typography"
-import Button from "@mui/material/Button"
-import "./Navbar.css"
+import React, { useState } from 'react'
+import Drawer from '@mui/material/Drawer';
+import { IoMenu } from "react-icons/io5";
+import { NavHashLink as NavLink } from 'react-router-hash-link';
 
-const drawerWidth = 240
-const navItems = ["About", "Highlights", "Organizations", "Contact"]
+import './Navbar.css'
 
-function Navbar(props) {
-  const { window } = props
-  const [mobileOpen, setMobileOpen] = React.useState(false)
+function Navbar() {
 
-  const handleDrawerToggle = () => {
-    setMobileOpen(!mobileOpen)
-  }
 
-  const drawer = (
-    <Box onClick={handleDrawerToggle} sx={{ textAlign: "center" }}>
-      <Typography variant="h6" sx={{ my: 2 }}>
-        Devsprint
-      </Typography>
-      <Divider />
-      <List>
-        {navItems.map((item) => (
-          <ListItem key={item} disablePadding>
-            <ListItemButton sx={{ textAlign: "center" }}>
-              <ListItemText primary={item} />
-            </ListItemButton>
-          </ListItem>
-        ))}
-      </List>
-    </Box>
-  )
+  const [drawer, setDrawer] = useState(false);
 
-  const container =
-    window !== undefined ? () => window().document.body : undefined
+
+  const handleDrawerOpen = () => {
+    setDrawer(true);
+  };
+
+  const handleDrawerClose = () => {
+    setDrawer(false);
+  };
+
 
   return (
-    <>
-      <Box sx={{ display: "flex" }}>
-        <AppBar component="nav">
-          <Toolbar>
-            <IconButton
-              color="inherit"
-              aria-label="open drawer"
-              edge="start"
-              onClick={handleDrawerToggle}
-              sx={{ mr: 2, display: { sm: "none" } }}
-            >
-              <MenuIcon />
-            </IconButton>
-            <Typography
-              variant="h6"
-              component="div"
-              sx={{ flexGrow: 1, display: { xs: "none", sm: "block" } }}
-            >
-              Devsprint
-            </Typography>
-            <Box sx={{ display: { xs: "none", sm: "block" } }}>
-              {navItems.map((item) => (
-                <Button key={item} sx={{ color: "#fff" }}>
-                  {item}
-                </Button>
-              ))}
-            </Box>
-          </Toolbar>
-        </AppBar>
-        <Box component="nav">
-          <Drawer
-            container={container}
-            variant="temporary"
-            open={mobileOpen}
-            onClose={handleDrawerToggle}
-            ModalProps={{
-              keepMounted: true,
-            }}
-            sx={{
-              display: { xs: "block", sm: "none" },
-              "& .MuiDrawer-paper": {
-                boxSizing: "border-box",
-                width: drawerWidth,
-              },
-            }}
-          >
-            {drawer}
-          </Drawer>
-        </Box>
-      </Box>
-    </>
+    <div className='navbar' style={{ background: '#ffffff'}}>
+      <div className='nav_logo'>
+        <h2 className='nav_title'>DEVSPRINT</h2>
+      </div>
+      <div className='nav_contents'>
+        <NavLink
+          to='/'
+          className='nav__link'
+          style={({ isActive }) => ({
+            color: '#053665',
+            fontWeight: isActive ? '800' : '600',
+          })}
+        >Home</NavLink>
+        <NavLink
+          to='/#about'
+          className='nav__link'
+          style={({ isActive }) => ({
+            color: '#053665',
+            fontWeight: isActive ? '800' : '600',
+          })}
+        >About</NavLink>
+        <NavLink
+          to='/#highlights'
+          className='nav__link'
+          style={({ isActive }) => ({
+            color: '#053665',
+            fontWeight: isActive ? '800' : '600',
+          })}
+        >Highlights</NavLink>
+        <NavLink
+          to='/#partners'
+          className='nav__link'
+          style={({ isActive }) => ({
+            color: '#053665',
+            fontWeight: isActive ? '800' : '600',
+          })}
+        >Partner Organizations</NavLink>
+        <NavLink
+          to='/#organizations'
+          className='nav__link'
+          style={({ isActive }) => ({
+            color: '#053665',
+            fontWeight: isActive ? '800' : '600',
+          })}
+        >Organized by</NavLink>
+        <NavLink
+          to='/#team'
+          className='nav__link'
+          style={({ isActive }) => ({
+            color: '#053665',
+            fontWeight: isActive ? '800' : '600',
+          })}
+        >Contacts</NavLink>
+      </div>
+
+
+      <div className='nav_hamburger' onClick={handleDrawerOpen}>
+        <IoMenu className='nam_menu_icon' />
+      </div>
+
+
+      <Drawer
+        disableScrollLock={true}
+        anchor="left"
+        open={drawer}
+        onClose={handleDrawerClose}
+        sx={{
+          borderRadius: 20,
+          width: '90%',
+        }}
+      >
+        <div className='navbar__mob' onClick={handleDrawerClose}>
+          <div className='navbar__mobcontents'>
+              <NavLink
+                  to='/'
+                  onClick={handleDrawerClose}
+                  className='navmob__link'
+                  style={({ isActive }) => ({
+                    color: isActive ? '#053665' : '#FFFFFF',
+                    fontWeight: isActive ? '800' : '600',
+                  })}
+                >Home</NavLink>
+                <NavLink
+                  to='/#about'
+                  onClick={handleDrawerClose}
+                  className='navmob__link'
+                  style={({ isActive }) => ({
+                    color: isActive ? '#053665' : '#FFFFFF',
+                    fontWeight: isActive ? '800' : '600',
+                  })}
+                >About</NavLink>
+                <NavLink
+                  to='/#highlights'
+                  onClick={handleDrawerClose}
+                  className='navmob__link'
+                  style={({ isActive }) => ({
+                    color: isActive ? '#053665' : '#FFFFFF',
+                    fontWeight: isActive ? '800' : '600',
+                  })}
+                >Highlights</NavLink>
+                <NavLink
+                  to='/#partners'
+                  onClick={handleDrawerClose}
+                  className='navmob__link'
+                  style={({ isActive }) => ({
+                    color: isActive ? '#053665' : '#FFFFFF',
+                    fontWeight: isActive ? '800' : '600',
+                  })}
+                >Partner Organizations</NavLink>
+                <NavLink
+                  to='/#organizations'
+                  onClick={handleDrawerClose}
+                  className='navmob__link'
+                  style={({ isActive }) => ({
+                    color: isActive ? '#053665' : '#FFFFFF',
+                    fontWeight: isActive ? '800' : '600',
+                  })}
+                >Organized by</NavLink>
+                <NavLink
+                  to='/#team'
+                  onClick={handleDrawerClose}
+                  className='navmob__link'
+                  style={({ isActive }) => ({
+                    color: isActive ? '#053665' : '#FFFFFF',
+                    fontWeight: isActive ? '800' : '600',
+                  })}
+                >Contacts</NavLink>
+          </div>              
+        </div>
+      </Drawer>
+    </div>
   )
 }
 
