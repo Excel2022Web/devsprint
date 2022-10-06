@@ -1,13 +1,13 @@
 .highlights {
-    height: 100vh;
+    min-height: 75vh;
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 2rem;
+    padding: 3.5rem 0;
 }
 
 .highlights-heading {
-    padding-top: 3rem;
+    padding: 2rem 0 0 0;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -15,7 +15,6 @@
     justify-content: center;
     gap: 1rem;
     text-align: center;
-    width: 53%;
 }
 
 .highlights-title {
@@ -35,11 +34,15 @@
 }
 
 .highlights-card {
-    padding: 2rem;
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 90%;
     gap: 1rem;
     flex-wrap: wrap;
+}
+
+@media only screen and (max-width: 992px) {
+  .highlights-card {
+    max-width: 720px;
+  }
 }

@@ -1,78 +1,82 @@
-.footer__main{
-    display: flex;
-    width: 100%;
-    align-items: center;
-    justify-content: center;
-    padding: 1rem;
+#footer {
+  background: #094c83;
+}
+
+.footer__main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem 0;
+  flex-direction: column;
+}
+
+.footer-social {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 2.5rem 0 1rem 0;
+}
+
+@media only screen and (max-width: 768px) {
+  .footer-social {
     flex-direction: column;
-    background: #094C83;
-    overflow: hidden;
+    gap: 3rem;
   }
-  
-   
-  .footer__logos{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    width: 100%;
-    padding: 2.5rem 1.5rem;
-    padding-bottom: 0;
+
+  .footer-social-socialmedia {
+    order: 2;
   }
-  
-  .footer__logos a {
-    width: 10rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  .footer-social-college {
+    order: 1;
   }
-  
-  .mec__logo{
-    width: 10rem;
-    z-index: 9;
-    pointer-events: none;
+  .footer-social-event {
+    order: 3;
   }
-  
-  .footer_mid {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 2rem;
-  }
-  
-  .footer_contact_social{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 1rem;
-  }
-  .footer_contact_social a{
-    text-decoration: none;
-      cursor: pointer;
-      border-radius: 7px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      width: 30px;
-      height: 30px;
-      color: #ffff;
-  }
-  .footer_contact_social a:hover{
-    transform: scale(1.25);
-  }
-  
-  .excel__logo{
-    width: 7rem;
-  }
-  .footer__made{
-    color: #ffffff;
-    font-size: 1rem;
-    font-family: var(--primary-font);
-  }
-  
-  .footer_heart {
-    margin: 0 0.25rem;
-    position: relative;
-    top: 3px;
-    color: #21b8cb;
-  }
+}
+
+.footer-social-socialmedia {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.footer-social-socialmedia a {
+  text-decoration: none;
+  cursor: pointer;
+  border-radius: 7px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  height: 30px;
+  color: #ffff;
+  transition: all 0.2s ease-out;
+}
+
+.footer-social-socialmedia a:hover {
+  transform: scale(1.25);
+}
+
+.mec__logo {
+  width: 10rem;
+  pointer-events: none;
+}
+.excel__logo {
+  width: 10rem;
+}
+
+.footer-madewith {
+  color: #ffffff;
+  font-size: 1rem;
+  font-family: var(--primary-font);
+}
+
+.footer_heart {
+  margin: 0 0.25rem;
+  position: relative;
+  top: 3px;
+  color: #21b8cb;
+}
