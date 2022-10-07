@@ -6,6 +6,7 @@
   justify-content: center;
   padding: 3.5rem 0;
   font-family: var(--primary-font);
+  color: var(--primary-color);
   gap: 2.5rem;
 }
 

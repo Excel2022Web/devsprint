@@ -15,12 +15,13 @@
     justify-content: center;
     gap: 1rem;
     text-align: center;
+    color: var(--primary-color);
 }
 
 .highlights-title {
     font-size: 2.5rem;
     font-family: var(--primary-font);
-    color: #000;
+    color: var(--primary-color);
     font-weight: 600;
 
 }
@@ -29,7 +30,7 @@
     font-family: var(--primary-font);
     font-size: 0.95rem;
     font-weight: 400;
-    color: var(--secondary-color);
+    color: var(--primary-color);
     flex-wrap: wrap;
 }
 
