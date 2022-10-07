@@ -31,7 +31,7 @@ function Organizations() {
         </div>
         <div className="org_event2">
           <div className="orgevent_img">
-            <img src={foss_mec_logo} alt="" />
+            <img src={foss_mec_logo} alt="" className="org_event2__img"/>
           </div>
           <div className="orgevent2_desc">
             <h2 className="orgdesc_name">Foss MEC</h2>
