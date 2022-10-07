@@ -2,6 +2,7 @@ import React, { useState } from "react"
 import Drawer from "@mui/material/Drawer"
 import { IoMenu, IoClose } from "react-icons/io5"
 import { NavHashLink as NavLink } from "react-router-hash-link"
+import { useScrollPosition } from "../../hooks/useScrollPosition"
 
 import "./Navbar.css"
 
@@ -16,8 +17,16 @@ function Navbar() {
     setDrawer(false)
   }
 
+  const scrollPosition = useScrollPosition();
+
+  const navStyle ={
+    background: scrollPosition > 600 ? "#8066cb": 'transparent',
+    boxShadow: scrollPosition > 600 ? "0px 2px 9px rgba(0, 0, 0, 0.11)": 'none',
+
+  }
+
   return (
-    <div className="navbar">
+    <div className="navbar" style={navStyle}>
       <div className="nav_logo">
         <h2 className="nav_title">DEVSPRINT</h2>
       </div>
