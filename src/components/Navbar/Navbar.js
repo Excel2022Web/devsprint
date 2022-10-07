@@ -1,86 +1,82 @@
-import React, { useState } from 'react'
-import Drawer from '@mui/material/Drawer';
-import { IoMenu } from "react-icons/io5";
-import { NavHashLink as NavLink } from 'react-router-hash-link';
+import React, { useState } from "react"
+import Drawer from "@mui/material/Drawer"
+import { IoMenu, IoClose } from "react-icons/io5"
+import { NavHashLink as NavLink } from "react-router-hash-link"
 
-import './Navbar.css'
+import "./Navbar.css"
 
 function Navbar() {
-
-
-  const [drawer, setDrawer] = useState(false);
-
+  const [drawer, setDrawer] = useState(false)
 
   const handleDrawerOpen = () => {
-    setDrawer(true);
-  };
+    setDrawer(true)
+  }
 
   const handleDrawerClose = () => {
-    setDrawer(false);
-  };
-
+    setDrawer(false)
+  }
 
   return (
-    <div className='navbar' >
-      <div className='nav_logo'>
-        <h2 className='nav_title'>DEVSPRINT</h2>
+    <div className="navbar">
+      <div className="nav_logo">
+        <h2 className="nav_title">DEVSPRINT</h2>
       </div>
-      <div className='nav_contents'>
+      <div className="nav_contents">
         <NavLink
-          to='/'
-          className='nav__link'
+          to="/#about"
+          className="nav__link"
           style={({ isActive }) => ({
-            color: 'white',
-            fontWeight: isActive ? '800' : '600',
+            color: "white",
+            fontWeight: isActive ? "800" : "600",
           })}
-        >Home</NavLink>
+        >
+          About
+        </NavLink>
         <NavLink
-          to='/#about'
-          className='nav__link'
+          to="/#highlights"
+          className="nav__link"
           style={({ isActive }) => ({
-            color: 'white',
-            fontWeight: isActive ? '800' : '600',
+            color: "white",
+            fontWeight: isActive ? "800" : "600",
           })}
-        >About</NavLink>
+        >
+          Highlights
+        </NavLink>
         <NavLink
-          to='/#highlights'
-          className='nav__link'
+          to="/#partners"
+          className="nav__link"
           style={({ isActive }) => ({
-            color: 'white',
-            fontWeight: isActive ? '800' : '600',
+            color: "white",
+            fontWeight: isActive ? "800" : "600",
           })}
-        >Highlights</NavLink>
+        >
+          Partner Organizations
+        </NavLink>
         <NavLink
-          to='/#partners'
-          className='nav__link'
+          to="/#organizations"
+          className="nav__link"
           style={({ isActive }) => ({
-            color: 'white',
-            fontWeight: isActive ? '800' : '600',
+            color: "white",
+            fontWeight: isActive ? "800" : "600",
           })}
-        >Partner Organizations</NavLink>
+        >
+          Organized by
+        </NavLink>
         <NavLink
-          to='/#organizations'
-          className='nav__link'
+          to="/#team"
+          className="nav__link"
           style={({ isActive }) => ({
-            color: 'white',
-            fontWeight: isActive ? '800' : '600',
+            color: "white",
+            fontWeight: isActive ? "800" : "600",
           })}
-        >Organized by</NavLink>
-        <NavLink
-          to='/#team'
-          className='nav__link'
-          style={({ isActive }) => ({
-            color: 'white',
-            fontWeight: isActive ? '800' : '600',
-          })}
-        >Contacts</NavLink>
-      </div>
-
-
-      <div className='nav_hamburger' onClick={handleDrawerOpen}>
-        <IoMenu className='nam_menu_icon' />
+        >
+          Contacts
+        </NavLink>
       </div>
 
+      <div className="nav_hamburger" onClick={handleDrawerOpen}>
+        <IoMenu className="nam_menu_icon" />
+      </div>
 
       <Drawer
         disableScrollLock={true}
@@ -89,66 +85,70 @@ function Navbar() {
         onClose={handleDrawerClose}
         sx={{
           borderRadius: 20,
-          width: '90%',
+          width: "90%",
         }}
       >
-        <div className='navbar__mob' onClick={handleDrawerClose}>
-          <div className='navbar__mobcontents'>
-              <NavLink
-                  to='/'
-                  onClick={handleDrawerClose}
-                  className='navmob__link'
-                  style={({ isActive }) => ({
-                    color: isActive ? '#053665' : '#FFFFFF',
-                    fontWeight: isActive ? '800' : '600',
-                  })}
-                >Home</NavLink>
-                <NavLink
-                  to='/#about'
-                  onClick={handleDrawerClose}
-                  className='navmob__link'
-                  style={({ isActive }) => ({
-                    color: isActive ? '#053665' : '#FFFFFF',
-                    fontWeight: isActive ? '800' : '600',
-                  })}
-                >About</NavLink>
-                <NavLink
-                  to='/#highlights'
-                  onClick={handleDrawerClose}
-                  className='navmob__link'
-                  style={({ isActive }) => ({
-                    color: isActive ? '#053665' : '#FFFFFF',
-                    fontWeight: isActive ? '800' : '600',
-                  })}
-                >Highlights</NavLink>
-                <NavLink
-                  to='/#partners'
-                  onClick={handleDrawerClose}
-                  className='navmob__link'
-                  style={({ isActive }) => ({
-                    color: isActive ? '#053665' : '#FFFFFF',
-                    fontWeight: isActive ? '800' : '600',
-                  })}
-                >Partner Organizations</NavLink>
-                <NavLink
-                  to='/#organizations'
-                  onClick={handleDrawerClose}
-                  className='navmob__link'
-                  style={({ isActive }) => ({
-                    color: isActive ? '#053665' : '#FFFFFF',
-                    fontWeight: isActive ? '800' : '600',
-                  })}
-                >Organized by</NavLink>
-                <NavLink
-                  to='/#team'
-                  onClick={handleDrawerClose}
-                  className='navmob__link'
-                  style={({ isActive }) => ({
-                    color: isActive ? '#053665' : '#FFFFFF',
-                    fontWeight: isActive ? '800' : '600',
-                  })}
-                >Contacts</NavLink>
-          </div>              
+        <div className="navbar__mob">
+          <div className="navbar_mob_close" onClick={handleDrawerClose}>
+            <IoClose />
+          </div>
+          <div className="navbar__mobcontents">
+            <NavLink
+              to="/#about"
+              onClick={handleDrawerClose}
+              className="navmob__link"
+              style={({ isActive }) => ({
+                color: isActive ? "white" : "#FFFFFF",
+                fontWeight: isActive ? "800" : "600",
+              })}
+            >
+              About
+            </NavLink>
+            <NavLink
+              to="/#highlights"
+              onClick={handleDrawerClose}
+              className="navmob__link"
+              style={({ isActive }) => ({
+                color: isActive ? "white" : "#FFFFFF",
+                fontWeight: isActive ? "800" : "600",
+              })}
+            >
+              Highlights
+            </NavLink>
+            <NavLink
+              to="/#partners"
+              onClick={handleDrawerClose}
+              className="navmob__link"
+              style={({ isActive }) => ({
+                color: isActive ? "white" : "#FFFFFF",
+                fontWeight: isActive ? "800" : "600",
+              })}
+            >
+              Partner Organizations
+            </NavLink>
+            <NavLink
+              to="/#organizations"
+              onClick={handleDrawerClose}
+              className="navmob__link"
+              style={({ isActive }) => ({
+                color: isActive ? "white" : "#FFFFFF",
+                fontWeight: isActive ? "800" : "600",
+              })}
+            >
+              Organized by
+            </NavLink>
+            <NavLink
+              to="/#team"
+              onClick={handleDrawerClose}
+              className="navmob__link"
+              style={({ isActive }) => ({
+                color: isActive ? "white" : "#FFFFFF",
+                fontWeight: isActive ? "800" : "600",
+              })}
+            >
+              Contacts
+            </NavLink>
+          </div>
         </div>
       </Drawer>
     </div>
