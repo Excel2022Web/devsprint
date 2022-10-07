@@ -8,7 +8,7 @@ import foss_mec_logo from "../../assets/png/fosspng.png"
 function Organizations() {
   return (
     <div className="container organizations" id="organizations">
-      <h1 className="org_title">Organized By</h1>
+      <h1 className="section_title">Organized By</h1>
       <div className="org-descriptions">
         <div className="org_event1">
           <div className="orgevent1_desc">
@@ -31,7 +31,7 @@ function Organizations() {
         </div>
         <div className="org_event2">
           <div className="orgevent_img">
-            <img src={foss_mec_logo} alt="" />
+            <img src={foss_mec_logo} alt="" className="org_event2__img"/>
           </div>
           <div className="orgevent2_desc">
             <h2 className="orgdesc_name">Foss MEC</h2>

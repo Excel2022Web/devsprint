@@ -30,6 +30,5 @@
 @media only screen and (max-width: 576px) {
   .container {
     max-width: 100%;
-    margin-inline: 2rem;
   }
 }

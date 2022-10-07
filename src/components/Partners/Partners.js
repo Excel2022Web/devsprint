@@ -7,7 +7,7 @@ import "./Partners.css"
 function Partners() {
   return (
     <div className="container partners" id="partners">
-      <h1 className="partners_title">Partners</h1>
+      <h1 className="section_title">Partner Organizations</h1>
       <div className="partner_card_container">
         {organizers.map((organizer) => {
           return (

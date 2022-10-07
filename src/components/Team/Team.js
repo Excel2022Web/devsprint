@@ -7,7 +7,7 @@ import "./Team.css"
 function Team() {
   return (
     <div className="container team" id="team">
-      <h1 className="team_title">Contact Us</h1>
+      <h1 className="section_title">Contact Us</h1>
       <div className="team_card_container">
         {organizers.map((organizer) => {
           return (
