@@ -9,7 +9,8 @@
   gap: 2.5rem;
 }
 
-.partners_title {
+.section_title {
+  text-align: center;
   font-size: 2.5rem;
   font-weight: 600;
   color: var(--primary-color);
@@ -67,4 +68,11 @@
   color: rgba(5, 54, 101, 0.71);
   font-size: 0.8rem;
   font-weight: 500;
+}
+
+
+@media only screen and (max-width: 600) {
+  .section_title {
+    font-size: 1.85rem;
+  }
 }
