@@ -1,6 +1,6 @@
 import React from "react"
 
-import { FaLinkedinIn, FaRegEnvelope, FaPhoneAlt } from "react-icons/fa"
+// import { FaLinkedinIn, FaRegEnvelope, FaPhoneAlt } from "react-icons/fa"
 import { organizers } from "../../assets/data/organizers"
 import "./Partners.css"
 
