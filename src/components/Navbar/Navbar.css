@@ -34,6 +34,7 @@
   font-size: 1.1rem;
   cursor: pointer;
   opacity: 0.8;
+  font-weight: 600;
 }
 
 .nav__link:hover {
@@ -51,7 +52,6 @@ a {
 .avatarIcon {
   cursor: pointer;
 }
-
 
 @media screen and (max-width: 992px) {
   .nav_hamburger {
@@ -82,6 +82,15 @@ a {
     align-items: center;
     justify-content: space-evenly;
     padding: 0rem 7rem;
+    position: relative;
+  }
+
+  .navbar_mob_close {
+    position: absolute;
+    top: 3rem;
+    right: 3rem;
+    font-size: 2rem;
+    color: white;
   }
 
   .navbar__mobcontents {

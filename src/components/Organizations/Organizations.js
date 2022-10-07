@@ -14,10 +14,15 @@ function Organizations() {
           <div className="orgevent1_desc">
             <h2 className="orgdesc_name">Excel</h2>
             <p className="orgdesc_details">
-              The builder interface comes with a lot of options that allow you
-              to customize your building experience. We try not to lock you down
-              into specific UI conventions, but instead give you the freedom go
-              to create websites the way you want to.
+              Excel is the annual national level techno-managerial fest of Govt.
+              Model Engineering College. Conceived in 2001 by the students,
+              Excel has grown exponentially, providing a strong platform which
+              hosts technical, managerial and general events. These events are
+              scheduled over three action packed days. Apart from a series of
+              high profile events like IBeTo (Innovations for a Better
+              Tomorrow), Untitled and .ISSUE!, Excel conducts online
+              competitions, workshops, talks and seminars, video conferences,
+              exhibitions and pro shows.
             </p>
           </div>
           <div className="orgevent_img">

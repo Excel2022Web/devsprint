@@ -11,7 +11,7 @@
 
 .about-title {
   font-size: 2.5rem;
-  color: #000;
+  color: var(--primary-color);
   font-weight: 600;
   padding-bottom: 2rem;
   text-align: center;
@@ -24,7 +24,7 @@
   justify-content: flex-start;
   width: 100%;
   gap: 1rem;
-  color: #838383;
+  color: var(--primary-color);
   font-family: var(--primary-font);
   font-size: 1rem;
 }

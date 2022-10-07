@@ -10,11 +10,15 @@
 
 .org_title {
   font-size: 2.5rem;
-  color: #000;
+  color: var(--primary-color);
   font-weight: 600;
   padding: 0 0 2.5rem 0;
 }
 
+.org-descriptions{
+  color: var(--primary-color);
+
+}
 .org_event1,
 .org_event2 {
   display: flex;
