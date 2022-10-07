@@ -17,69 +17,71 @@ function Navbar() {
     setDrawer(false)
   }
 
-  const scrollPosition = useScrollPosition();
+  const scrollPosition = useScrollPosition()
 
-  const navStyle ={
-    background: scrollPosition > 600 ? "#8066cb": 'transparent',
-    boxShadow: scrollPosition > 600 ? "0px 2px 9px rgba(0, 0, 0, 0.11)": 'none',
-
+  const navStyle = {
+    background: scrollPosition > 600 ? "#8066cb" : "transparent",
+    boxShadow:
+      scrollPosition > 600 ? "0px 2px 9px rgba(0, 0, 0, 0.11)" : "none",
   }
 
   return (
     <div className="navbar" style={navStyle}>
-      <div className="nav_logo">
-        <h2 className="nav_title">DEVSPRINT</h2>
-      </div>
-      <div className="nav_contents">
-        <NavLink
-          to="/#about"
-          className="nav__link"
-          style={({ isActive }) => ({
-            color: "white",
-          })}
-        >
-          About
-        </NavLink>
-        <NavLink
-          to="/#highlights"
-          className="nav__link"
-          style={({ isActive }) => ({
-            color: "white",
-          })}
-        >
-          Highlights
-        </NavLink>
-        <NavLink
-          to="/#partners"
-          className="nav__link"
-          style={({ isActive }) => ({
-            color: "white",
-          })}
-        >
-          Partner Organizations
-        </NavLink>
-        <NavLink
-          to="/#organizations"
-          className="nav__link"
-          style={({ isActive }) => ({
-            color: "white",
-          })}
-        >
-          Organized by
-        </NavLink>
-        <NavLink
-          to="/#team"
-          className="nav__link"
-          style={({ isActive }) => ({
-            color: "white",
-          })}
-        >
-          Contacts
-        </NavLink>
-      </div>
+      <div className="navbar__main container">
+        <div className="nav_logo">
+          <h2 className="nav_title">DEVSPRINT</h2>
+        </div>
+        <div className="nav_contents">
+          <NavLink
+            to="/#about"
+            className="nav__link"
+            style={({ isActive }) => ({
+              color: "white",
+            })}
+          >
+            About
+          </NavLink>
+          <NavLink
+            to="/#highlights"
+            className="nav__link"
+            style={({ isActive }) => ({
+              color: "white",
+            })}
+          >
+            Highlights
+          </NavLink>
+          <NavLink
+            to="/#partners"
+            className="nav__link"
+            style={({ isActive }) => ({
+              color: "white",
+            })}
+          >
+            Partner Organizations
+          </NavLink>
+          <NavLink
+            to="/#organizations"
+            className="nav__link"
+            style={({ isActive }) => ({
+              color: "white",
+            })}
+          >
+            Organized by
+          </NavLink>
+          <NavLink
+            to="/#team"
+            className="nav__link"
+            style={({ isActive }) => ({
+              color: "white",
+            })}
+          >
+            Contacts
+          </NavLink>
+        </div>
 
-      <div className="nav_hamburger" onClick={handleDrawerOpen}>
-        <IoMenu className="nam_menu_icon" />
+        <div className="nav_hamburger" onClick={handleDrawerOpen}>
+          <IoMenu className="nam_menu_icon" />
+        </div>
       </div>
 
       <Drawer
