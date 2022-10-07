@@ -6,6 +6,12 @@
   background-size: cover;
 }
 
+@media only screen and (max-width: 576px) {
+  .landing {
+    background-image: url("../../assets//png//bg-sm.jpg");
+  }
+}
+
 .landing-body {
   height: 100%;
 
@@ -26,8 +32,14 @@
 .landing-logo {
   width: 525px;
 }
+@media only screen and (max-width: 576px) {
+  .landing-logo {
+    max-width: 100%;
+    padding: 0 1rem;
+  }
+}
 
-.landing-logo  img {
+.landing-logo img {
   height: 100%;
   width: 100%;
 }
@@ -58,7 +70,6 @@
 }
 
 .landing-button {
-
   font-family: var(--primary-font);
   width: 11rem;
   border: none;
