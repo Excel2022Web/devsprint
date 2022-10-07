@@ -1,3 +1,69 @@
 .partners {
-    height: 100vh;
+  min-height: 50vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 3.5rem 0;
+  font-family: var(--primary-font);
+  gap: 2.5rem;
+}
+
+.partners_title {
+  font-size: 2.5rem;
+  font-weight: 600;
+}
+
+.partner_card_container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.partner_card {
+  width: 220px;
+  height: 175px;
+  box-shadow: 0px 2px 9px rgba(0, 0, 0, 0.15);
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 0.5rem;
+  padding: 1.25rem 0.7rem;
+  margin-top: 85px;
+  border-radius: 10px;
+  position: relative;
+}
+.partner__image {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.partner__image > img {
+  width: 150px;
+  height: 150px;
+  transform: translateY(-80px);
+  border-radius: 50%;
+  border: 8px solid #8066cb;
+}
+
+.partner__name {
+  font-family: var(--primary-font);
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 600;
+  text-align: center;
+  color: #8066cb;
+}
+
+.partner__role {
+  font-family: var(--primary-font);
+  color: rgba(5, 54, 101, 0.71);
+  font-size: 0.8rem;
+  font-weight: 500;
 }
