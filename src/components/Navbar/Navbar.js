@@ -27,7 +27,6 @@ function Navbar() {
           className="nav__link"
           style={({ isActive }) => ({
             color: "white",
-            fontWeight: isActive ? "800" : "600",
           })}
         >
           About
@@ -37,7 +36,6 @@ function Navbar() {
           className="nav__link"
           style={({ isActive }) => ({
             color: "white",
-            fontWeight: isActive ? "800" : "600",
           })}
         >
           Highlights
@@ -47,7 +45,6 @@ function Navbar() {
           className="nav__link"
           style={({ isActive }) => ({
             color: "white",
-            fontWeight: isActive ? "800" : "600",
           })}
         >
           Partner Organizations
@@ -57,7 +54,6 @@ function Navbar() {
           className="nav__link"
           style={({ isActive }) => ({
             color: "white",
-            fontWeight: isActive ? "800" : "600",
           })}
         >
           Organized by
@@ -67,7 +63,6 @@ function Navbar() {
           className="nav__link"
           style={({ isActive }) => ({
             color: "white",
-            fontWeight: isActive ? "800" : "600",
           })}
         >
           Contacts
