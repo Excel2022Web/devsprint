@@ -5,6 +5,7 @@ import { NavHashLink as NavLink } from "react-router-hash-link"
 import { useScrollPosition } from "../../hooks/useScrollPosition"
 
 import "./Navbar.css"
+import devsprintLogo from "../../assets/png/devsprint_logo_new.png"
 
 function Navbar() {
   const [drawer, setDrawer] = useState(false)
@@ -20,7 +21,7 @@ function Navbar() {
   const scrollPosition = useScrollPosition()
 
   const navStyle = {
-    background: scrollPosition > 600 ? "#8066cb" : "transparent",
+    background: scrollPosition > 200 ? "#8066cb" : "transparent",
     boxShadow:
       scrollPosition > 600 ? "0px 2px 9px rgba(0, 0, 0, 0.11)" : "none",
   }
@@ -29,7 +30,7 @@ function Navbar() {
     <div className="navbar" style={navStyle}>
       <div className="navbar__main container">
         <div className="nav_logo">
-          <h2 className="nav_title">DEVSPRINT</h2>
+          <img src={devsprintLogo} alt="" />
         </div>
         <div className="nav_contents">
           <NavLink
