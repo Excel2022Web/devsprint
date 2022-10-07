@@ -21,7 +21,7 @@ function Navbar() {
 
 
   return (
-    <div className='navbar' style={{ background: '#ffffff'}}>
+    <div className='navbar' >
       <div className='nav_logo'>
         <h2 className='nav_title'>DEVSPRINT</h2>
       </div>
@@ -30,7 +30,7 @@ function Navbar() {
           to='/'
           className='nav__link'
           style={({ isActive }) => ({
-            color: '#053665',
+            color: 'white',
             fontWeight: isActive ? '800' : '600',
           })}
         >Home</NavLink>
@@ -38,7 +38,7 @@ function Navbar() {
           to='/#about'
           className='nav__link'
           style={({ isActive }) => ({
-            color: '#053665',
+            color: 'white',
             fontWeight: isActive ? '800' : '600',
           })}
         >About</NavLink>
@@ -46,7 +46,7 @@ function Navbar() {
           to='/#highlights'
           className='nav__link'
           style={({ isActive }) => ({
-            color: '#053665',
+            color: 'white',
             fontWeight: isActive ? '800' : '600',
           })}
         >Highlights</NavLink>
@@ -54,7 +54,7 @@ function Navbar() {
           to='/#partners'
           className='nav__link'
           style={({ isActive }) => ({
-            color: '#053665',
+            color: 'white',
             fontWeight: isActive ? '800' : '600',
           })}
         >Partner Organizations</NavLink>
@@ -62,7 +62,7 @@ function Navbar() {
           to='/#organizations'
           className='nav__link'
           style={({ isActive }) => ({
-            color: '#053665',
+            color: 'white',
             fontWeight: isActive ? '800' : '600',
           })}
         >Organized by</NavLink>
@@ -70,7 +70,7 @@ function Navbar() {
           to='/#team'
           className='nav__link'
           style={({ isActive }) => ({
-            color: '#053665',
+            color: 'white',
             fontWeight: isActive ? '800' : '600',
           })}
         >Contacts</NavLink>
