@@ -8,7 +8,7 @@ import foss_mec_logo from "../../assets/png/fossmec.png"
 function Organizations() {
   return (
     <div className="container organizations" id="organizations">
-      <h1 className="org_title">Organizations</h1>
+      <h1 className="org_title">Organized By</h1>
       <div className="org-descriptions">
         <div className="org_event1">
           <div className="orgevent1_desc">
