@@ -1,5 +1,5 @@
 #footer {
-  background: #094c83;
+  background: #03012C;
 }
 
 .footer__main {
@@ -17,6 +17,10 @@
   align-items: center;
   width: 100%;
   padding: 2.5rem 0 1rem 0;
+}
+
+.contact_social_icon {
+  font-size: 1.25rem;
 }
 
 @media only screen and (max-width: 768px) {

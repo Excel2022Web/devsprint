@@ -3,7 +3,7 @@ import React from "react"
 import "./Organizations.css"
 
 import excel_logo from "../../assets/png/excellogowithtext.png"
-import foss_mec_logo from "../../assets/png/fossmec.png"
+import foss_mec_logo from "../../assets/png/fosspng.png"
 
 function Organizations() {
   return (
