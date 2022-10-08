@@ -1,5 +1,5 @@
 .aboutCard {
-  --color: #1b77bc;
+
   width: 220px;
   padding: 30px 20px;
   display: flex;
@@ -10,14 +10,14 @@
   transition: all 0.3s ease;
 }
 .aboutCard:hover {
-  background: var(--color);
+  background: #27265b;
   color: #fff;
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
 }
 
 .aboutcard_icon {
   font-size: 4rem;
-  color: var(--color);
+  color: #27265b;
   transition: all 0.3s ease;
 }
 .aboutcard_title {

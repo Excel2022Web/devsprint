@@ -52,7 +52,7 @@
   height: 150px;
   transform: translateY(-70px);
   border-radius: 50%;
-  border: 8px solid #8066cb;
+  border: 8px solid #27265b;
 }
 
 .partner__name {
@@ -61,7 +61,7 @@
   font-style: normal;
   font-weight: 600;
   text-align: center;
-  color: #8066cb;
+  color: #27265b;
 }
 
 .partner__role {
