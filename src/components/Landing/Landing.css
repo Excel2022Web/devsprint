@@ -98,6 +98,7 @@
   font-size: 1.1rem;
   cursor: pointer;
   transition: all 0.2s ease-out;
+  border-radius: 25px;
   border: 2px solid #fff;
 }
 
@@ -165,7 +166,7 @@
   to {
     transform: translateY(-2000px);
   }
-=======
+}
 .landing-button a {
   color: inherit;
 }
