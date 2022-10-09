@@ -1,1 +1,7 @@
-export { default as LandingPage } from './LandingPage/LandingPage'
+import { lazy } from 'react'
+
+const LandingPage = lazy(() => import('./LandingPage/LandingPage'));
+
+export { 
+    LandingPage
+}
