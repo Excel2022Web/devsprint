@@ -1,12 +1,19 @@
 import React from "react"
+import { useEffect } from "react"
 import { HiCode } from "react-icons/hi"
+import AOS from "aos"
+import "aos/dist/aos.css"
 
 import "./HighlightsCard/HighlightsCard.css"
 import "./Highlights.css"
 
 function Highlights() {
+  useEffect(() => {
+    AOS.init()
+  }, [])
+
   return (
-    <div className="container highlights" id="highlights">
+    <div className="container highlights" id="highlights" data-aos="fade-up">
       <div className="highlights-heading">
         <h2 className="section_title">Highlights</h2>
       </div>
