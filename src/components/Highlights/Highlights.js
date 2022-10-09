@@ -1,5 +1,5 @@
 import React from "react"
-import { AiOutlineStar } from "react-icons/ai"
+import { HiCode } from "react-icons/hi"
 
 import "./HighlightsCard/HighlightsCard.css"
 import "./Highlights.css"
@@ -13,7 +13,7 @@ function Highlights() {
       <div className="highlights-card">
         <div className="highlightsCard">
           <div className="highlightsCard-icon">
-            <AiOutlineStar className="card-icon" />
+            <HiCode className="card-icon" />
           </div>
           <h4 className="highlightsCard-title">Community</h4>
           <h6 className="highlightsCard-desc">
@@ -24,7 +24,7 @@ function Highlights() {
         </div>
         <div className="highlightsCard">
           <div className="highlightsCard-icon">
-            <AiOutlineStar className="card-icon" />
+            <HiCode className="card-icon" />
           </div>
           <h4 className="highlightsCard-title">Fight for the Cause</h4>
           <h6 className="highlightsCard-desc">
@@ -34,7 +34,7 @@ function Highlights() {
         </div>
         <div className="highlightsCard">
           <div className="highlightsCard-icon">
-            <AiOutlineStar className="card-icon" />
+            <HiCode className="card-icon" />
           </div>
           <h4 className="highlightsCard-title">Be Future-proof</h4>
           <h6 className="highlightsCard-desc">
@@ -44,7 +44,7 @@ function Highlights() {
         </div>
         <div className="highlightsCard">
           <div className="highlightsCard-icon">
-            <AiOutlineStar className="card-icon" />
+            <HiCode className="card-icon" />
           </div>
           <h4 className="highlightsCard-title">Showcase your skills</h4>
           <h6 className="highlightsCard-desc">
