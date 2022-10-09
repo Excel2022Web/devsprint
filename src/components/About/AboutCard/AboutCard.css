@@ -1,13 +1,16 @@
 .aboutCard {
 
   width: 220px;
+  min-height: 300px;
   padding: 30px 20px;
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
-  background-color: #efefef;
+  background-color: #fff;
   cursor: pointer;
   transition: all 0.3s ease;
+  border-radius: 10px;
+  box-shadow: 0px 2px 9px rgb(0 0 0 / 15%);
 }
 .aboutCard:hover {
   background: #27265b;
@@ -16,7 +19,7 @@
 }
 
 .aboutcard_icon {
-  font-size: 4rem;
+  font-size: 3.5rem;
   color: #27265b;
   transition: all 0.3s ease;
   display: flex;

@@ -17,6 +17,12 @@
   font-family: var(--primary-font);
 }
 
+@media only screen and (max-width: 576px) {
+  .section_title {
+    font-size: 2rem;
+  }
+}
+
 .partner_card_container {
   display: flex;
   align-items: center;
@@ -71,9 +77,3 @@
   font-weight: 500;
 }
 
-
-@media only screen and (max-width: 600) {
-  .section_title {
-    font-size: 1.85rem;
-  }
-}
