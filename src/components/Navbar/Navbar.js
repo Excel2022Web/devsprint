@@ -21,9 +21,9 @@ function Navbar() {
   const scrollPosition = useScrollPosition()
 
   const navStyle = {
-    background: scrollPosition > 200 ? "#27265b" : "transparent",
+    background: scrollPosition > 200 ? "#04005e" : "transparent",
     boxShadow:
-      scrollPosition > 600 ? "0px 2px 9px rgba(0, 0, 0, 0.11)" : "none",
+      scrollPosition > 200 ? "0px 2px 9px rgba(0, 0, 0, 0.11)" : "none",
   }
 
   return (
@@ -58,7 +58,7 @@ function Navbar() {
               color: "white",
             })}
           >
-            Partner Organizations
+            Speakers
           </NavLink>
           <NavLink
             to="/#organizations"
@@ -131,7 +131,7 @@ function Navbar() {
                 fontWeight: isActive ? "800" : "600",
               })}
             >
-              Partner Organizations
+              Speakers
             </NavLink>
             <NavLink
               to="/#organizations"
