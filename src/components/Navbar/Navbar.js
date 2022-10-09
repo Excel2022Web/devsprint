@@ -58,7 +58,7 @@ function Navbar() {
               color: "white",
             })}
           >
-            Speakers
+            Participating Organizations
           </NavLink>
           <NavLink
             to="/#organizations"
@@ -131,7 +131,7 @@ function Navbar() {
                 fontWeight: isActive ? "700" : "600",
               })}
             >
-              Speakers
+              Participating Organizations
             </NavLink>
             <NavLink
               to="/#organizations"

@@ -14,7 +14,7 @@ function Partners() {
 
   return (
     <div className="container partners" id="partners" data-aos="fade-up">
-      <h1 className="section_title">Speakers</h1>
+      <h1 className="section_title">Participating Organizations</h1>
       <div className="partner_card_container">
         {partnerData.map((partner) => (
           <div className="partner_card" key={partner.id}>
