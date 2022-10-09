@@ -93,3 +93,7 @@
 .landing-button:hover {
   transform: scale(1.05);
 }
+
+.landing-button a {
+  color: inherit;
+}
