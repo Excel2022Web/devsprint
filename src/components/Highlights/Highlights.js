@@ -1,19 +1,26 @@
 import React from "react"
-import { AiOutlineStar } from "react-icons/ai"
+import { useEffect } from "react"
+import { HiCode } from "react-icons/hi"
+import AOS from "aos"
+import "aos/dist/aos.css"
 
 import "./HighlightsCard/HighlightsCard.css"
 import "./Highlights.css"
 
 function Highlights() {
+  useEffect(() => {
+    AOS.init()
+  }, [])
+
   return (
-    <div className="container highlights" id="highlights">
+    <div className="container highlights" id="highlights" data-aos="fade-up">
       <div className="highlights-heading">
         <h2 className="section_title">Highlights</h2>
       </div>
       <div className="highlights-card">
         <div className="highlightsCard">
           <div className="highlightsCard-icon">
-            <AiOutlineStar className="card-icon" />
+            <HiCode className="card-icon" />
           </div>
           <h4 className="highlightsCard-title">Community</h4>
           <h6 className="highlightsCard-desc">
@@ -24,7 +31,7 @@ function Highlights() {
         </div>
         <div className="highlightsCard">
           <div className="highlightsCard-icon">
-            <AiOutlineStar className="card-icon" />
+            <HiCode className="card-icon" />
           </div>
           <h4 className="highlightsCard-title">Fight for the Cause</h4>
           <h6 className="highlightsCard-desc">
@@ -34,7 +41,7 @@ function Highlights() {
         </div>
         <div className="highlightsCard">
           <div className="highlightsCard-icon">
-            <AiOutlineStar className="card-icon" />
+            <HiCode className="card-icon" />
           </div>
           <h4 className="highlightsCard-title">Be Future-proof</h4>
           <h6 className="highlightsCard-desc">
@@ -44,7 +51,7 @@ function Highlights() {
         </div>
         <div className="highlightsCard">
           <div className="highlightsCard-icon">
-            <AiOutlineStar className="card-icon" />
+            <HiCode className="card-icon" />
           </div>
           <h4 className="highlightsCard-title">Showcase your skills</h4>
           <h6 className="highlightsCard-desc">

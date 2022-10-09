@@ -1,12 +1,19 @@
 import React from "react"
+import { useEffect } from "react"
 import { FaLinkedinIn, FaRegEnvelope, FaPhoneAlt } from "react-icons/fa"
+import AOS from "aos"
+import "aos/dist/aos.css"
 import {organizers} from "../../assets/data/organizers"
 
 import "./Team.css"
 
 function Team() {
+  useEffect(() => {
+    AOS.init()
+  }, [])
+
   return (
-    <div className="container team" id="team">
+    <div className="container team" id="team" data-aos="fade-up">
       <h1 className="section_title">Contact Us</h1>
       <div className="team_card_container">
         {organizers.map((organizer) => {

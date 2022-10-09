@@ -1,13 +1,20 @@
 import React from "react"
 import { BsLightbulb, BsGlobe, BsBook } from "react-icons/bs"
 import { FaHandshake } from "react-icons/fa"
+import AOS from "aos"
+import "aos/dist/aos.css"
 
 import "./About.css"
 import "./AboutCard/AboutCard.css"
+import { useEffect } from "react"
 
 function About() {
+  useEffect(() => {
+    AOS.init()
+  }, [])
+
   return (
-    <div className="container about" id="about">
+    <div className="container about" id="about" data-aos="fade-up">
       <div className="about-heading">
         <h2 className="section_title">About the event</h2>
         <div className="about-desc">

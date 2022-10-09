@@ -20,7 +20,11 @@ function Landing() {
           {/* <h2 className='landing-title'>DEVSPRINT</h2> */}
           <h4 className="landing-desc">16-23 October, 2022</h4>
         </div>
-        <button className="landing-button">Register</button>
+        <button className="landing-button">
+          <a href="https://rzp.io/l/devsprint" target="_blank">
+            Register
+          </a>
+        </button>
       </div>
     </div>
     

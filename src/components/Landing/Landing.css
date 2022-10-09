@@ -105,7 +105,6 @@
   transform: scale(1.05);
 }
 
-
 #stars {
   width: 1px;
   height: 1px;
@@ -166,4 +165,7 @@
   to {
     transform: translateY(-2000px);
   }
+=======
+.landing-button a {
+  color: inherit;
 }
