@@ -14,10 +14,10 @@ function About() {
   }, [])
 
   return (
-    <div className="container about" id="about" data-aos="fade-up">
+    <div className="container about" id="about">
       <div className="about-heading">
         <h2 className="section_title">About the event</h2>
-        <div className="about-desc">
+        <div className="about-desc"  data-aos="fade-up">
           <p className="about-desc1">
             FOSSMEC & EXCEL is here with a spectacular event to create a dynamic
             learning experience and to encourage students and working
@@ -26,7 +26,7 @@ function About() {
             interact with real world projects while gaining a deep understanding
             of the software projects.
           </p>
-          <p className="about-desc2">
+          <p className="about-desc2"  data-aos="fade-up">
             Contributing to open source projects can be a lot of fun, though
             challenging at first. What better way to explore it than with
             DevSprint & an OSS enthusiastic community around you! So, sign up
@@ -36,7 +36,7 @@ function About() {
         </div>
       </div>
       <div className="about-cards">
-        <div className="aboutCard">
+        <div className="aboutCard" data-aos="fade-up">
           <div className="aboutcard_icon">
             <BsLightbulb className="acicon" />
           </div>
@@ -46,7 +46,7 @@ function About() {
             Project, code base, tech stacks & future ventures.
           </p>
         </div>
-        <div className="aboutCard">
+        <div className="aboutCard" data-aos="fade-up">
           <div className="aboutcard_icon">
             <BsBook className="acicon" />
           </div>
@@ -56,7 +56,7 @@ function About() {
             contribute to projects of your choice.
           </p>
         </div>
-        <div className="aboutCard">
+        <div className="aboutCard" data-aos="fade-up">
           <div className="aboutcard_icon">
             <BsGlobe className="acicon" />
           </div>
@@ -66,7 +66,7 @@ function About() {
             of varied professional experience.
           </p>
         </div>
-        <div className="aboutCard">
+        <div className="aboutCard" data-aos="fade-up">
           <div className="aboutcard_icon">
             <FaHandshake className="acicon" />
           </div>

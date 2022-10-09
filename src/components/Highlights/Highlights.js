@@ -13,11 +13,11 @@ function Highlights() {
   }, [])
 
   return (
-    <div className="container highlights" id="highlights" data-aos="fade-up">
+    <div className="container highlights" id="highlights">
       <div className="highlights-heading">
         <h2 className="section_title">Highlights</h2>
       </div>
-      <div className="highlights-card">
+      <div className="highlights-card" data-aos="fade-up">
         <div className="highlightsCard">
           <div className="highlightsCard-icon">
             <HiCode className="card-icon" />
@@ -29,7 +29,7 @@ function Highlights() {
             change.
           </h6>
         </div>
-        <div className="highlightsCard">
+        <div className="highlightsCard" data-aos="fade-up">
           <div className="highlightsCard-icon">
             <HiCode className="card-icon" />
           </div>
@@ -39,7 +39,7 @@ function Highlights() {
             unadulterated access.
           </h6>
         </div>
-        <div className="highlightsCard">
+        <div className="highlightsCard" data-aos="fade-up">
           <div className="highlightsCard-icon">
             <HiCode className="card-icon" />
           </div>
@@ -49,7 +49,7 @@ function Highlights() {
             a remote setup in preparation for the real world.
           </h6>
         </div>
-        <div className="highlightsCard">
+        <div className="highlightsCard" data-aos="fade-up">
           <div className="highlightsCard-icon">
             <HiCode className="card-icon" />
           </div>
