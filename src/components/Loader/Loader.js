@@ -1,10 +1,14 @@
 import React from 'react'
+import CircleLoader from "react-spinners/CircleLoader";
+
 
 import './Loader.css'
 
 function Loader() {
   return (
-    <div className='loader'>Loading</div>
+    <div className='loader'>
+      <CircleLoader size={65} color="#b33c86"/>
+    </div>
   )
 }
 
