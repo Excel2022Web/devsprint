@@ -3,9 +3,15 @@ import React from "react"
 import "./Landing.css"
 import devsprintLogo from "../../assets/png/devsprint_logo_new.png"
 
+
+  
 function Landing() {
   return (
+    
     <div className="landing">
+      <div id='stars'></div>
+        <div id='stars2'></div>
+        <div id='stars3'></div>
       <div className="container landing-body">
         <div className="landing-logo">
           <img src={devsprintLogo} alt="" />
@@ -21,6 +27,7 @@ function Landing() {
         </button>
       </div>
     </div>
+    
   )
 }
 
