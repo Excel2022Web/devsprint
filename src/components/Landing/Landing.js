@@ -12,11 +12,9 @@ function Landing() {
         </div>
         <div className="landing-heading">
           {/* <h2 className='landing-title'>DEVSPRINT</h2> */}
-          <h4 className="landing-desc">
-            12-14 FEBRUARY 2018 - LOS ANGELES, CA
-          </h4>
+          <h4 className="landing-desc">16-23 October, 2022</h4>
         </div>
-        <button className="landing-button">Click here</button>
+        <button className="landing-button">Register</button>
       </div>
     </div>
   )
