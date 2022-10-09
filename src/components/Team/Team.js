@@ -18,7 +18,7 @@ function Team() {
       <div className="team_card_container">
         {organizers.map((organizer) => {
           return (
-            <div className="contact_card">
+            <div className="contact_card" key={organizer.name}>
               <div className="contact__image">
                 <img
                   src={organizer.photo}

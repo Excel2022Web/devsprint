@@ -17,18 +17,13 @@
   font-family: var(--primary-font);
 }
 
-@media only screen and (max-width: 576px) {
-  .section_title {
-    font-size: 2rem;
-  }
-}
-
 .partner_card_container {
   display: flex;
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
   gap: 2rem;
+  width: 90%;
 }
 
 .partner_card {
@@ -58,13 +53,22 @@
 
 .partner__role {
   font-family: var(--primary-font);
-  color: rgba(5, 54, 101, 0.71);
+  color: rgba(5, 54, 101, 0.9);
   font-size: 1rem;
-  font-weight: 500;
+  font-weight: 600;
 }
 
 .partner__organization {
   font-weight: 300;
   font-size: 0.8rem;
-  color: rgba(5, 54, 82, 0.71);
+  color: rgba(5, 54, 82, 0.8);
+}
+
+@media only screen and (max-width: 576px) {
+  .section_title {
+    font-size: 1.75rem;
+  }
+  .partner_card_container {
+    width: 100%;
+  }
 }

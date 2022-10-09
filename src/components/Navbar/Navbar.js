@@ -106,7 +106,7 @@ function Navbar() {
               className="navmob__link"
               style={({ isActive }) => ({
                 color: isActive ? "white" : "#FFFFFF",
-                fontWeight: isActive ? "800" : "600",
+                fontWeight: isActive ? "700" : "600",
               })}
             >
               About
@@ -117,7 +117,7 @@ function Navbar() {
               className="navmob__link"
               style={({ isActive }) => ({
                 color: isActive ? "white" : "#FFFFFF",
-                fontWeight: isActive ? "800" : "600",
+                fontWeight: isActive ? "700" : "600",
               })}
             >
               Highlights
@@ -128,7 +128,7 @@ function Navbar() {
               className="navmob__link"
               style={({ isActive }) => ({
                 color: isActive ? "white" : "#FFFFFF",
-                fontWeight: isActive ? "800" : "600",
+                fontWeight: isActive ? "700" : "600",
               })}
             >
               Speakers
@@ -139,7 +139,7 @@ function Navbar() {
               className="navmob__link"
               style={({ isActive }) => ({
                 color: isActive ? "white" : "#FFFFFF",
-                fontWeight: isActive ? "800" : "600",
+                fontWeight: isActive ? "700" : "600",
               })}
             >
               Organized by
@@ -150,7 +150,7 @@ function Navbar() {
               className="navmob__link"
               style={({ isActive }) => ({
                 color: isActive ? "white" : "#FFFFFF",
-                fontWeight: isActive ? "800" : "600",
+                fontWeight: isActive ? "700" : "600",
               })}
             >
               Contacts

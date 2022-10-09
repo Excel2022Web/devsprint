@@ -21,7 +21,7 @@ function Landing() {
           <h4 className="landing-desc">16-23 October, 2022</h4>
         </div>
         <button className="landing-button">
-          <a href="https://rzp.io/l/devsprint" target="_blank">
+          <a href="https://rzp.io/l/devsprint" target="_blank" rel="noreferrer">
             Register
           </a>
         </button>
