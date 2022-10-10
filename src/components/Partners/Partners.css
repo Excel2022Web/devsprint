@@ -55,7 +55,7 @@
 .partner__role {
   font-family: var(--primary-font);
   color: rgba(5, 54, 101, 0.9);
-  font-size: 1rem;
+  font-size: 1.25rem;
   font-weight: 600;
 }
 

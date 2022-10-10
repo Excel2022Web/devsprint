@@ -30,53 +30,48 @@ function Navbar() {
     <div className="navbar" style={navStyle}>
       <div className="navbar__main container">
         <div className="nav_logo">
+        <NavLink
+            to="/#"
+          >
           <img src={devsprintLogo} alt="" />
+          </NavLink>
         </div>
         <div className="nav_contents">
           <NavLink
             to="/#about"
             className="nav__link"
-            style={({ isActive }) => ({
-              color: "white",
-            })}
           >
             About
           </NavLink>
           <NavLink
             to="/#highlights"
             className="nav__link"
-            style={({ isActive }) => ({
-              color: "white",
-            })}
           >
             Highlights
           </NavLink>
           <NavLink
+            to="/#timeline"
+            className="nav__link"
+          >
+            Timeline
+          </NavLink>
+          <NavLink
             to="/#partners"
             className="nav__link"
-            style={({ isActive }) => ({
-              color: "white",
-            })}
           >
             Participating Organizations
           </NavLink>
           <NavLink
             to="/#organizations"
             className="nav__link"
-            style={({ isActive }) => ({
-              color: "white",
-            })}
           >
             Organized by
           </NavLink>
           <NavLink
             to="/#team"
             className="nav__link"
-            style={({ isActive }) => ({
-              color: "white",
-            })}
           >
-            Contacts
+            Contacts Us
           </NavLink>
         </div>
 
@@ -104,10 +99,6 @@ function Navbar() {
               to="/#about"
               onClick={handleDrawerClose}
               className="navmob__link"
-              style={({ isActive }) => ({
-                color: isActive ? "white" : "#FFFFFF",
-                fontWeight: isActive ? "700" : "600",
-              })}
             >
               About
             </NavLink>
@@ -115,21 +106,20 @@ function Navbar() {
               to="/#highlights"
               onClick={handleDrawerClose}
               className="navmob__link"
-              style={({ isActive }) => ({
-                color: isActive ? "white" : "#FFFFFF",
-                fontWeight: isActive ? "700" : "600",
-              })}
             >
               Highlights
+            </NavLink>
+            <NavLink
+              to="/#timeline"
+              onClick={handleDrawerClose}
+              className="nav__link"
+            >
+              Timeline
             </NavLink>
             <NavLink
               to="/#partners"
               onClick={handleDrawerClose}
               className="navmob__link"
-              style={({ isActive }) => ({
-                color: isActive ? "white" : "#FFFFFF",
-                fontWeight: isActive ? "700" : "600",
-              })}
             >
               Participating Organizations
             </NavLink>
@@ -137,10 +127,6 @@ function Navbar() {
               to="/#organizations"
               onClick={handleDrawerClose}
               className="navmob__link"
-              style={({ isActive }) => ({
-                color: isActive ? "white" : "#FFFFFF",
-                fontWeight: isActive ? "700" : "600",
-              })}
             >
               Organized by
             </NavLink>
@@ -148,12 +134,8 @@ function Navbar() {
               to="/#team"
               onClick={handleDrawerClose}
               className="navmob__link"
-              style={({ isActive }) => ({
-                color: isActive ? "white" : "#FFFFFF",
-                fontWeight: isActive ? "700" : "600",
-              })}
             >
-              Contacts
+              Contacts Us
             </NavLink>
           </div>
         </div>

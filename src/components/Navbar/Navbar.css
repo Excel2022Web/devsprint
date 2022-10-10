@@ -60,6 +60,16 @@ a {
   cursor: pointer;
 }
 
+
+@media screen and (max-width: 1200px) {
+  .nav_contents {
+    gap: 1rem;
+  }
+  .nav__link {
+    font-size: 1rem;
+  }
+}
+
 @media screen and (max-width: 992px) {
   .nav_hamburger {
     border-radius: 30px;

@@ -17,8 +17,8 @@ function Highlights() {
       <div className="highlights-heading">
         <h2 className="section_title">Highlights</h2>
       </div>
-      <div className="highlights-card" data-aos="fade-up">
-        <div className="highlightsCard">
+      <div className="highlights-card">
+        <div className="highlightsCard" data-aos="fade-up">
           <div className="highlightsCard-icon">
             <HiCode className="card-icon" />
           </div>

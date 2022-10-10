@@ -8,12 +8,17 @@
     justify-content: flex-start;
     background-color: #fff;
     border-radius: 10px;
+    transition: transform 0.3s;
     box-shadow: 0px 2px 9px rgb(0 0 0 / 15%);
+}
+
+.highlightsCard:hover {
+    background-color: #03012c12;
 }
 
 .highlightsCard-icon {
     box-sizing: border-box;
-    padding: 1.2rem;
+    padding: 1rem;
 }
 
 .card-icon {
@@ -28,6 +33,7 @@
     color: #000;
     padding-bottom: 0.7rem;
     text-align: center;
+    line-height: 110%;
 }
 
 .highlightsCard-desc {

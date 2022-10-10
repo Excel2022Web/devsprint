@@ -1,6 +1,6 @@
 import React from 'react'
 
-import { Landing, About, Highlights, Partners, Team, Organizations } from '../../components'
+import { Landing, About, Highlights, Partners, Team, Organizations, Timeline } from '../../components'
 
 import './LandingPage.css'
 
@@ -10,6 +10,7 @@ function LandingPage() {
       <Landing />
       <About />
       <Highlights />
+      <Timeline />
       <Partners />
       <Organizations />
       {/* <Sponsors /> */}
