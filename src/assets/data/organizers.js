@@ -1,7 +1,7 @@
 export const organizers = [
   {
     name: "Nasreen K Basheer",
-    title: "Chairperson",
+    title: "Chairperson, Excel 2022",
     email: "nasreenkbasheer.mec@gmail.com",
     phone: "9605204433",
     linkedin: "https://www.linkedin.com/in/nasreen-k-basheer-6795331a5",
