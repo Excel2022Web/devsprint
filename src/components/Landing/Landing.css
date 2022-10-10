@@ -73,6 +73,7 @@
   font-family: var(--primary-font);
   color: #fff;
   font-weight: 400;
+  line-height: 110%;
 }
 @media only screen and (max-width: 576px) {
   .landing-desc {
