@@ -40,7 +40,7 @@
   .timeline-item {
     color: #ffffff;
     font-family: var(--primary-font);
-    text-align: center;
+    text-align: start;
     font-size: 1.2rem;
     padding: 1rem 1.5rem 1rem 1.5rem;
     border-left: 4px solid #fff;
@@ -48,7 +48,16 @@
     position: relative;
     list-style-type: none;
     --item-width: calc(100%);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
   }
+
+  .t_bold {
+    font-weight: 600;
+  }
+
   .timeline-item::after {
     content: attr(data-date);
     position: absolute;
@@ -86,7 +95,7 @@
     .timeline {
       margin: 0 auto;
       position: relative;
-      left: 35px;
+      left: 15px;
     }
     .timeline .timeline-item {
       font-size: 1rem;
@@ -101,10 +110,11 @@
         font-size: 1.2rem;
         margin: 1.25rem 0;
       }
+      
   }
   @media only screen and (max-width: 800px) {
     .timeline-item {
-      padding: 1rem 1.5rem 1rem 0.5rem;
+      padding: 1rem 1.5rem 1rem 1rem;
     }
     .timeline-item::after {
       right: calc(var(--item-width) + 20px);
