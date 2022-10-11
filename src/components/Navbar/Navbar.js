@@ -112,7 +112,7 @@ function Navbar() {
             <NavLink
               to="/#timeline"
               onClick={handleDrawerClose}
-              className="nav__link"
+              className="navmob__link"
             >
               Timeline
             </NavLink>
