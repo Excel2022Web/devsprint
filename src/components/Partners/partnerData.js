@@ -38,7 +38,7 @@ export const partnerData = [
     {
         id: 7,
         name: '',
-        organization: 'BroxyHQ',
-        desc: 'It is a Next.js based "software as service" starter kit that saves months of development by starting off with all the features that are the same in every product.  It is built with languages like next.js, tailwind css, postgres, react, prisma, typescript etc.'
+        organization: 'BoxyHQ',
+        desc: "BoxyHQ helps developers automate product security and provides low-code APIs to enable enterprise-compliant security via simple and efficient integrations."
     },
 ]
