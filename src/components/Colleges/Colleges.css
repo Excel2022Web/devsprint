@@ -1,0 +1,38 @@
+.colleges {
+    min-height: 60vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+    gap: 2rem;
+    overflow: hidden;
+}
+
+.marquee_slide {
+    display: flex;
+    margin-top: 2rem;
+}
+
+.clubsnorgs_marquee {
+    display: flex;
+    width: 80%;
+    gap: 4rem;
+}
+
+.colleges_img {
+    display: flex;
+    width: 250px;
+    border-radius: 10px;
+    pointer-events: none;
+    cursor: pointer;
+    transition: ease-in 0.2s;
+}
+
+.colleges_img img {
+    width: 100%;
+    cursor: pointer;
+}
+
+.colleges_img img:hover {
+    transform: scale(1.1);
+}
