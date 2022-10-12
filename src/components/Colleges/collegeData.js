@@ -1,32 +1,31 @@
+import cusatImg from '../../assets/png/cusat.png'
+import fossGecImg from '../../assets/png/foss-GEC.png'
+import netxImg from '../../assets/png/NetX-MACE.png'
+import ieeeImg from '../../assets/png/ieee.png'
+
 export const collegeData = [
     {
         id: 1,
-        name: '',
+        name: 'CUSAT',
         url: '',
-        logo: 'https://www.mec.ac.in/static/media/collegelogo@2x.9167c282.png'
+        logo: cusatImg
     },
     {
         id: 2,
-        name: '',
+        name: 'FOSS CELL GECT',
         url: '',
-        logo: 'https://www.mec.ac.in/static/media/collegelogo@2x.9167c282.png'
+        logo: fossGecImg
     },
     {
         id: 3,
-        name: '',
+        name: 'NetX | MACE',
         url: '',
-        logo: 'https://www.mec.ac.in/static/media/collegelogo@2x.9167c282.png'
+        logo: netxImg
     },
     {
         id: 4,
-        name: '',
+        name: 'IEEE SSET SB',
         url: '',
-        logo: 'https://www.mec.ac.in/static/media/collegelogo@2x.9167c282.png'
-    },
-    {
-        id: 5,
-        name: '',
-        url: '',
-        logo: 'https://www.mec.ac.in/static/media/collegelogo@2x.9167c282.png'
+        logo: ieeeImg
     },
 ]

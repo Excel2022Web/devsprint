@@ -15,24 +15,37 @@
 
 .clubsnorgs_marquee {
     display: flex;
-    width: 80%;
     gap: 4rem;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
 }
 
-.colleges_img {
+.colleges_details {
     display: flex;
     width: 250px;
     border-radius: 10px;
     pointer-events: none;
     cursor: pointer;
     transition: ease-in 0.2s;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
 }
 
-.colleges_img img {
-    width: 100%;
+.colleges_details img {
+    width: 200px;
     cursor: pointer;
+
 }
 
-.colleges_img img:hover {
+/* .colleges_img img:hover {
     transform: scale(1.1);
+} */
+
+.colleges_details h4 {
+    font-family: var(--primary-font);
+    color: rgba(0, 0, 0, 0.944);
+    font-size: 1.25rem;
+    font-weight: 600;
 }
