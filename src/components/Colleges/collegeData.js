@@ -2,6 +2,7 @@ import cusatImg from '../../assets/png/cusat.png'
 import fossGecImg from '../../assets/png/foss-GEC.png'
 import netxImg from '../../assets/png/NetX-MACE.png'
 import ieeeImg from '../../assets/png/ieee.png'
+import fisatImg from '../../assets/jpg/fisat.jpg'
 
 export const collegeData = [
     {
@@ -27,5 +28,11 @@ export const collegeData = [
         name: 'IEEE SSET SB',
         url: '',
         logo: ieeeImg
+    },
+    {
+        id: 5,
+        name: 'Icefoss FISAT',
+        url: '',
+        logo: fisatImg
     },
 ]
