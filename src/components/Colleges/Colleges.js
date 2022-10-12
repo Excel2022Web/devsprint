@@ -7,7 +7,7 @@ import { collegeData } from './collegeData'
 function Colleges() {
   return (
     <div className='colleges'>
-        <h1 className="section_title">Colleges</h1>
+        <h1 className="section_title">Community Partners</h1>
         <div className='colleges__container'>
               <div className='clubsnorgs_marquee'>
                 {collegeData.map((clg) => (

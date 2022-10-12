@@ -49,3 +49,15 @@
     font-size: 1.25rem;
     font-weight: 600;
 }
+
+
+@media only screen and (max-width: 576px) {
+    .clubsnorgs_marquee {
+        gap: 2rem;
+    }
+
+    .colleges_details img {
+        width: 180px;
+    }
+
+}
