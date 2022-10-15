@@ -90,22 +90,23 @@
 
 .landing-button {
   font-family: var(--primary-font);
-  width: 11rem;
+  width: 13rem;
   border: none;
   outline: none;
-  padding: 0.5rem 1.5rem;
+  padding: 0.5rem;
   background-color: #0c004b33;
   color: #fff;
   font-size: 1.1rem;
-  cursor: pointer;
   transition: all 0.2s ease-out;
   border-radius: 25px;
   border: 2px solid #fff;
+  white-space: nowrap;
+  text-align: center;
 }
 
-.landing-button:hover {
+/* .landing-button:hover {
   transform: scale(1.05);
-}
+} */
 
 #stars {
   width: 1px;
